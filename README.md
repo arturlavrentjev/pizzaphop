@@ -1,1 +1,1 @@
-# react-pizza
+Стек: React, redux-toolkit, TypeScript
