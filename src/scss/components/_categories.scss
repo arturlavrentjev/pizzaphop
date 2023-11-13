@@ -1,0 +1,28 @@
+@import '../variables';
+
+.categories {
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 10px;
+      padding: 13px 30px;
+      background-color: var(--brown);
+      border-radius: 30px;
+      font-weight: bold;
+      color: var(--white);
+      transition: background 0.2s ease-in-out;
+      cursor: pointer;
+      @include noselect();
+
+      &:hover {
+        background: linear-gradient(262deg, #FF5924 12.12%, #FFA229 86.72%);
+      }
+
+      &.active {
+        background: linear-gradient(262deg, #FF5924 12.12%, #FFA229 86.72%);
+        border-radius: 100px;
+      }
+    }
+  }
+}
